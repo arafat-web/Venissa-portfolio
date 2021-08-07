@@ -1,0 +1,205 @@
+<!-- 
+    Author: Arafat Hossain Ar
+    UI Design using Tailwind
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venissa - I am a Designer</title>
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Tailwind Lib Link -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+
+<body class="max-w-7xl mx-auto">
+
+
+    <!-- sidebar start  -->
+    <aside style="width: 100px; height: 100vh"
+        class="float-left inline-block border-r-2 border-gray-200 hidden sm:hidden md:block lg:block">
+        <a class="block pt-5 text-center" href="">
+            <span class="text-6xl">V</span>
+            <span class="-ml-2 inline-block font-bold text-2xl text-red-500">i</span></a>
+
+        <ul class="text-center text-gray-400">
+            <li>
+                <a href=""><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-dribbble"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-behance-square"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-vimeo"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-linkedin-square"></i></a>
+            </li>
+        </ul>
+    </aside>
+    <!-- sidebar end  -->
+
+    <!-- Navbar Start -->
+    <nav class="bg-white shadow-sm md:shadow-none top-0 z-50">
+        <div class="mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7 pl-4  md:pt-5">
+                    <div class="sm:hidden md:hidden lg:hidden">
+                        <!-- Website Logo -->
+                        <a href="#" class="flex text-center">
+                            <span class="text-3xl">V</span>
+                            <span class="inline-block pt-3 font-bold text-sm text-red-500">i</span>
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center">
+                        <a href="#hero" class="py-4 mr-10 text-gray-900 border-b-2 border-black font-bold">portfolio</a>
+                        <a href="#services"
+                            class="py-4 mr-10 text-gray-900 font-bold hover:text-red-500 transition duration-300">about
+                            me</a>
+                        <a href="#projects"
+                            class="py-4 mr-10 text-gray-900 font-bold hover:text-red-500 transition duration-300">my
+                            blog</a>
+                        <a href="#team"
+                            class="py-4 mr-10 text-gray-900 font-bold hover:text-red-500 transition duration-300">reviews</a>
+                        <a href="#contact"
+                            class="py-4 px-2 text-gray-900 font-bold hover:text-red-500 transition duration-300">contact
+                            me</a>
+                    </div>
+                </div>
+
+                <!-- Secondary Navbar items -->
+                <div class="hidden mt-5 md:flex items-center">
+                    <a href=""
+                        class="py-4 px-4 font-medium text-red-500 font-bold rounded hover:opacity-70 transition duration-300">
+                        <span class="inline-block pr-1"><i class="fa fa-phone font-bold text-sm"></i></span>
+                        Schedule a Call</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500 hover:text-red-500" x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active">
+                    <a href="index.html"
+                        class="block text-sm px-2 py-4 text-white bg-red-500 font-semibold">portfolio</a>
+                </li>
+                <li>
+                    <a href="#services" class="block text-sm px-2 py-4 hover:bg-red-500 transition duration-300">about
+                        me</a>
+                </li>
+                <li>
+                    <a href="#projetcs" class="block text-sm px-2 py-4 hover:bg-red-500 transition duration-300">my
+                        blog</a>
+                </li>
+                <li>
+                    <a href="#team" class="block text-sm px-2 py-4 hover:bg-red-500 transition duration-300">
+                        reviews</a>
+                </li>
+                <li>
+                    <a href="#contact" class="block text-sm px-2 py-4 hover:bg-red-500 transition duration-300">contact
+                        me</a>
+                </li>
+                <li>
+                    <a href="" class="block text-sm text-red-500 px-2 py-4 hover:opacity-70 transition duration-300">
+                        <span class="inline-block pr-1"><i class="fa fa-phone font-bold text-sm"></i></span>
+                        Schedule a Call</a>
+                </li>
+
+                <div class="text-left social text-gray-400">
+                    <li>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-dribbble"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-behance-square"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-vimeo"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-linkedin-square"></i></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Area Start -->
+    <section>
+        <div class="row">
+            <div class="col-2">
+                <div class=" py-10 pl-10 hero-text md:py-20 md:pl-20">
+                    <div class="tracking-wide text-sm text-black font-semibold">Hi There,</div>
+                    <a href="#"
+                        class="block mt-1 md:text-6xl leading-tight font-bold text-black text-3xl hover:opacity-70">I am
+                        Ven<span class="text-red-500">i</span>ssa</a>
+                    <p class="mt-2 text-2xl md:text-3xl font-bold text-black">I am a designer during daytime</p>
+                    <p class="text-1xl font-bold text-black leading-8">& work with batman during night</p>
+                    <a class="inline-block mt-6 bg-red-500 py-2 px-8 font-medium text-md text-white" href="http://">Ask
+                        Me How</a>
+                </div>
+
+                <div class="link mt-20 pl-20 font-bold">
+                    <li class="inline-block border-r-2">
+                        <h1>Email</h1>
+                        <p>
+                            <a href="mailto:venissa@gotham.com">venissa@gotham.com</a>
+                        </p>
+                    </li>
+                    <li class="inline-block border-r-2">
+                        <h1>Phone</h1>
+                        <p>
+                            <a href="tel:+1903334445555">+190-333-444-5555</a>
+                        </p>
+                    </li>
+                    <li class="inline-block">
+                        <h1> Location </h1>
+                        <p>
+                            Gotham city, Arkham
+                        </p>
+                    </li>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="img ">
+                    <img style="max-height: 80vh;" class=" md:pl-20" src="src/download.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Hero Area End -->
+<!-- Script for resposive nabar -->
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
